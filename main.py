@@ -23,7 +23,7 @@ def show_history():
         print(message)
 
 
-if sys.argv[1] == 'history':
+if len(sys.argv) > 1 and sys.argv[1] == 'history':
     show_history()
 
 last_update = None
